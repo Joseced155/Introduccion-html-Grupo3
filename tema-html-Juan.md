@@ -1,21 +1,24 @@
-# Imágenes y Enlaces en HTML
+# 4. Imágenes y enlaces en HTML
 
-Este documento explica de forma breve cómo insertar elementos visuales y enlaces de navegación en una página web.
+## Etiqueta <img>
 
----
+La etiqueta `<img>` se usa para insertar imágenes en una página web. Es una etiqueta vacía (no tiene cierre) y depende de dos atributos principales:
 
-## 1. Enlaces (`<a>`)
+- **src**: indica la ruta o URL de la imagen que se quiere mostrar.
+- **alt**: proporciona un texto alternativo que se muestra si la imagen no carga, y mejora la accesibilidad para lectores de pantalla.
 
-La etiqueta `<a>` (*anchor*) se utiliza para crear hipervínculos hacia otras páginas web, archivos o secciones del mismo documento.
+<img src="imagenes/logo.png" alt="Logo de la universidad">
 
-* **Atributo principal:** `href` (indica la URL de destino).
-* **Atributo opcional común:** `target="_blank"` (abre el enlace en una pestaña nueva).
+## Etiqueta <a>
 
-### Ejemplo de uso:
+La etiqueta `<a>` crea enlaces (hipervínculos) hacia otras páginas, sitios o recursos. El atributo principal es:
 
-```html
-<!-- Enlace estándar -->
-<a href="[utp.ac.pa](https://www.utp.ac.pa)">Visitar UTP</a>
+- **href**: define la dirección de destino del enlace (una URL, una página interna, un correo, etc.).
 
-<!-- Enlace que abre en nueva pestaña -->
-<a href="[github.com](https://github.com)" target="_blank">Ir a GitHub</a>
+<a href="https://www.ejemplo.com">Visitar sitio web</a>
+
+## Ejemplo combinado (imagen + enlace a MDN)
+
+<a href="https://developer.mozilla.org/es/docs/Web/HTML">
+  <img src="https://developer.mozilla.org/favicon-48x48.png" alt="Documentación de MDN Web Docs">
+</a>
